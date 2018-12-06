@@ -8,6 +8,7 @@
  * and including debug and bits read/written information
  * 
  * @author Owen Astrachan
+ * @hi ola
  */
 
 public class HuffProcessor {

@@ -77,7 +77,15 @@ public class HuffProcessor {
 		}
 		out.close();
 	}
-
+	
+	/**
+	 * helper function that reads the bit stream 
+	 * into a tree of HuffNodes. Throws exception 
+	 * if bit out of bounds (not 0 or 1).
+	 * @param in specifies bit stream being inputed
+	 * @return HuffNode with value, weight, left and 
+	 * right subtrees 
+	 */
 	private HuffNode readTreeHeader(BitInputStream in) {
 		int bit = in.readBits(1);
 		if (bit == -1) {
